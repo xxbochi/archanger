@@ -1,6 +1,6 @@
 # archanger
 
-AR Changer for osu sort of, done in a kind of shit way
+AR Changer for osu sort of, done in a kind of bad way
 
 Targets this region of memory:
 

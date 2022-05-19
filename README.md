@@ -12,7 +12,11 @@ The idea is to replace the function called with an "fld [address]", with the add
 The call shown is called from multiple places to determine different values used in osu! difficulty calculation, so we can't modify the function; we can only stop it from being called in this case and divert it to our own code to be executed. Right now we just patch in the fld instruction bytes manually, but this has caused a lot of crashing issues and is generally a messy solution. Soon I'll write a hook function so we can write to empty space and jmp / ret back and forth from the regular code execution, so stability shouldn't be an issue.
 
 # detection
-Program should be UD as far as osuauth.dll goes/ and you don't use cheat engine to inject or something stupid
+Program should be UD as far as osuauth.dll goes and you don't use cheat engine to inject or something stupid
+
+# additional
+
+there are lots of header files/imgui stuff missing from this repo, I'll add them later once I find the motivation to make this a good program
 
 # planned fixes
 Fixes I'll implement when I'm bothered, in order of difficulty:
